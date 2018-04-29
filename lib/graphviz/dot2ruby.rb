@@ -18,7 +18,7 @@
 require 'graphviz/ext'
 require 'graphviz/utils'
 
-class Dot2Ruby #:nodoc:
+class Dot2Ruby < BasicObject #:nodoc:
   include GraphViz::Utils
 
   def initialize( xGVPath, xOutFile, xOutFormat = nil ) #:nodoc:
